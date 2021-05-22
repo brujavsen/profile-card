@@ -1,0 +1,168 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root {
+
+    /* Font */
+    --primary-font: 'Kumbh Sans', sans-serif;
+
+    /* Colors */
+    --bkg-color: hsl(185, 75%, 39%);
+    --heading: hsl(229, 23%, 23%);
+    --span: hsl(227, 10%, 46%);
+    --white: #FFF;
+
+    /* Weights */
+    --normal: 400;
+    --bold: 700;
+}
+
+/* Globals */
+html {
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-size: 18px;
+    background-color: var(--bkg-color);
+    font-family: var(--primary-font);
+}
+span {
+    font-weight: var(--normal);
+    color: var(--span);
+}
+p {
+    color: var(--span);
+    padding: 5px;
+    margin-bottom: 15px;
+}
+
+/* Center container */
+.center-cnt {
+    height: 100vh;
+    
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Background */
+.bkg-top {
+    position: absolute;
+    z-index: 1;
+    top: -500px;
+    left: -300px;
+}
+.bkg-bottom {
+    position: absolute;
+    z-index: 1;
+    bottom: -600px;
+    right: -200px;
+}
+
+/* Card */
+.card {
+    position: absolute;
+    z-index: 2;
+    
+    background-color: var(--white);
+    width: 400px;
+    height: 450px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 25px var(--span);
+}
+.card__bkg {
+    border-radius: 20px 20px 0 0;
+    width: 100%;
+}
+
+/* Card image */
+.card__image {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -50px;
+}
+.image-profile {
+    border-radius: 50%;
+    border: 5px solid var(--white);
+}
+
+/* Card info profile */
+.card__info {
+    padding: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.info-name {
+    font-size: 25px;
+    line-height: 2;
+    color: var(--heading);
+}
+
+/* Line horizontal */
+.line {
+    content: '';
+    width: 100%;
+    border: 1px solid rgb(224, 222, 222);
+}
+
+/* Card stats */
+.card__stats {
+    width: 95%;
+}
+.stats {
+    text-align: center;
+    margin-top: 20px;
+
+    display: flex;
+    justify-content: space-evenly;
+
+    list-style: none;
+}
+.stats-item {
+    display: flex;
+    flex-direction: column;
+
+    font-weight: var(--bold);
+    padding: 10px;
+}
+.stats-item > span {
+    letter-spacing: 2px;
+    font-size: 15px;
+    padding: 10px;
+}
+
+/* Media Query MOBILE */
+
+@media screen and (max-width: 375px) {
+
+    /* Background */
+    .bkg-top {
+        left: -750px;
+    }
+    .bkg-bottom {
+        right: -750px;
+    }
+
+    /* card */
+    .card {
+        width: 350px;
+    }
+
+}
