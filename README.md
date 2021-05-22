@@ -58,5 +58,5 @@ The challenges have helped me to progress a lot with CSS, since many properties 
 
 ## Author
 
-- Frontend Mentor - [@brujaven](https://www.frontendmentor.io/profile/brujavsen)
+-Frontend Mentor - [@brujaven](https://www.frontendmentor.io/profile/brujavsen)
 -GitHub - [brujaven](https://github.com/brujavsen)
