@@ -29,6 +29,7 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 
 - Solution URL: [GitHub](https://github.com/brujavsen/profile-card)
 - Live Site URL: [GitHub-Pages](https://brujavsen.github.io/profile-card/)
+[Netlify](https://profile-card-bruno.netlify.app/)
 
 ## My process
 
